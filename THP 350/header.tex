@@ -1,0 +1,233 @@
+\RequirePackage{etex}
+\makeatletter
+\ifx \nauthor\undefined
+  \def\nauthor{Daniel Moore}
+\else
+\fi
+
+\author{Based on lectures by \nlecturer \\\small Notes taken by \nauthor}
+\date{\nterm\ \nyear}
+
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{booktabs}
+\usepackage[makeroom]{cancel}
+\usepackage{caption}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{mathdots}
+\usepackage{mathtools}
+\usepackage{microtype}
+\usepackage{multirow}
+\usepackage{pdflscape}
+\usepackage{siunitx}
+\usepackage{textcomp}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage[normalem]{ulem}
+\usepackage[all]{xy}
+\usepackage{imakeidx}
+
+\makeindex[intoc, title=Index]
+\indexsetup{othercode={\lhead{\emph{Index}}}}
+%\setcounter{secnumdepth}{4}
+
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+\ifx \nextra \undefined
+  \usepackage[pdftex,
+    hidelinks,
+    pdfauthor={Daniel Moore},
+    pdfsubject={\ncourse},
+    pdftitle={\ncourse},
+  pdfkeywords={\nterm\ \nyear\ \ncourse}]{hyperref}
+  \title{\ncourse}
+\else
+  \usepackage[pdftex,
+    hidelinks,
+    pdfauthor={Daniel Moore},
+    pdfsubject={\ncourse\ (\nextra)},
+    pdftitle={\ncourse\ (\nextra)},
+  pdfkeywords={\nterm\ \nyear\ \ncourse\ \nextra}]{hyperref}
+
+  \title{\ncourse \\ {\Large \nextra}}
+  \renewcommand\printindex{}
+\fi
+
+\pagestyle{fancyplain}
+\ifx \ncoursehead \undefined
+\def\ncoursehead{\ncourse}
+\fi
+
+\lhead{\emph{\nouppercase{\leftmark}}}
+\ifx \nextra \undefined
+  \rhead{
+    \ifnum\thepage=1
+    \else
+      \ncoursehead
+    \fi}
+\else
+  \rhead{
+    \ifnum\thepage=1
+    \else
+      \ncoursehead \ (\nextra)
+    \fi}
+\fi
+
+\newcommand*{\Cdot}{{\raisebox{-0.25ex}{\scalebox{1.5}{$\cdot$}}}}
+\newcommand{\mbeq}{\overset{!}{=}}
+\newcommand{\vhat}[1]{\vec{\hat{#1}}}
+\newcommand{\x}{\vhat{x}}
+\newcommand{\y}{\vhat{y}}
+\newcommand{\z}{\vhat{z}}
+\newcommand{\del}{\vec{\nabla}}
+\ifx \nhtml \undefined
+\else
+  \renewcommand\printindex{}
+  \DisableLigatures[f]{family = *}
+  \let\Contentsline\contentsline
+  \renewcommand\contentsline[3]{\Contentsline{#1}{#2}{}}
+  \renewcommand{\@dotsep}{10000}
+  \newlength\currentparindent
+  \setlength\currentparindent\parindent
+
+  \newcommand\@minipagerestore{\setlength{\parindent}{\currentparindent}}
+  \usepackage[active,tightpage,pdftex]{preview}
+  \renewcommand{\PreviewBorder}{0.1cm}
+
+  \newenvironment{stretchpage}%
+  {\begin{preview}\begin{minipage}{\hsize}}%
+    {\end{minipage}\end{preview}}
+  \AtBeginDocument{\begin{stretchpage}}
+  \AtEndDocument{\end{stretchpage}}
+
+  \newcommand{\@@newpage}{\end{stretchpage}\begin{stretchpage}}
+
+  \let\@real@section\section
+  \renewcommand{\section}{\@@newpage\@real@section}
+  \let\@real@subsection\subsection
+  \renewcommand{\subsection}{\@ifstar{\@real@subsection*}{\@@newpage\@real@subsection}}
+\fi
+\ifx \ntrim \undefined
+\else
+  \usepackage{geometry}
+  \geometry{
+    papersize={379pt, 699pt},
+    textwidth=345pt,
+    textheight=596pt,
+    left=17pt,
+    top=54pt,
+    right=17pt
+  }
+\fi
+
+\ifx \nisofficial \undefined
+\let\@real@maketitle\maketitle
+\renewcommand{\maketitle}{\@real@maketitle\begin{center}\begin{minipage}[c]{0.9\textwidth}\centering\footnotesize These notes are not endorsed by the lecturers, and I have modified them (often significantly) after lectures. They are nowhere near accurate representations of what was actually lectured, and in particular, all errors are almost surely mine.\end{minipage}\end{center}}
+\else
+\fi
+
+% Theorems
+\theoremstyle{definition}
+\newtheorem*{aim}{Aim}
+\newtheorem*{ans}{Answer}
+\newtheorem*{axiom}{Axiom}
+\newtheorem*{claim}{Claim}
+\newtheorem*{cor}{Corollary}
+\newtheorem*{conjecture}{Conjecture}
+\newtheorem*{defi}{Definition}
+\newtheorem*{eg}{Example}
+\newtheorem*{ex}{Exercise}
+\newtheorem*{fact}{Fact}
+\newtheorem*{law}{Law}
+\newtheorem*{notation}{Notation}
+\newtheorem*{prop}{Proposition}
+\newtheorem*{post}{Postulate}
+\newtheorem*{question}{Question}
+\newtheorem*{problem}{Problem}
+\newtheorem*{rrule}{Rule}
+\newtheorem*{thm}{Theorem}
+\newtheorem*{assumption}{Assumption}
+
+\newtheorem*{remark}{Remark}
+\newtheorem*{warning}{Warning}
+\newtheorem*{exercise}{Exercise}
+
+\newtheorem{nthm}{Theorem}[section]
+\newtheorem{nlemma}[nthm]{Lemma}
+\newtheorem{nprop}[nthm]{Proposition}
+\newtheorem{ncor}[nthm]{Corollary}
+
+
+\renewcommand{\labelitemi}{--}
+\renewcommand{\labelitemii}{$\circ$}
+\renewcommand{\labelenumi}{(\roman{*})}
+
+\let\stdsection\section
+\renewcommand\section{\newpage\stdsection}
+
+% Strike through
+\def\st{\bgroup \ULdepth=-.55ex \ULset}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%% Maths Symbols %%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Brackets
+\newcommand{\abs}[1]{\left\lvert #1\right\rvert}
+\newcommand{\expval}[3]{\left\langle #1 \left\vert #2 \right\vert #3 \right\rangle}
+\newcommand{\norm}[1]{\left\lVert #1\right\rVert}
+\newcommand{\normalorder}[1]{\mathop{:}\nolimits\!#1\!\mathop{:}\nolimits}
+\newcommand{\tv}[1]{|#1|}
+\renewcommand{\vec}[1]{\boldsymbol{\mathbf{#1}}}
+\newcommand{\matr}[1]{\mathbf{#1}}
+\newcommand{\exval}[1]{\left\langle #1\right\rangle}
+
+% not-math
+\newcommand{\bolds}[1]{{\bfseries #1}}
+\newcommand{\cat}[1]{\mathsf{#1}}
+\newcommand{\ph}{\,\cdot\,}
+\newcommand{\term}[1]{\emph{#1}\index{#1}}
+\newcommand{\phantomeq}{\hphantom{{}={}}}
+
+\let\Im\relax
+\let\Re\relax
+
+\newcommand\qedshift{\vspace{-17pt}}
+\newcommand\fakeqed{\pushQED{\qed}\qedhere}
+
+\def\Xint#1{\mathchoice
+   {\XXint\displaystyle\textstyle{#1}}%
+   {\XXint\textstyle\scriptstyle{#1}}%
+   {\XXint\scriptstyle\scriptscriptstyle{#1}}%
+   {\XXint\scriptscriptstyle\scriptscriptstyle{#1}}%
+   \!\int}
+\def\XXint#1#2#3{{\setbox0=\hbox{$#1{#2#3}{\int}$}
+     \vcenter{\hbox{$#2#3$}}\kern-.5\wd0}}
+\def\ddashint{\Xint=}
+\def\dashint{\Xint-}
+
+\newcommand\separator{{\centering\rule{2cm}{0.2pt}\vspace{2pt}\par}}
+
+\newenvironment{own}{\color{gray!70!black}}{}
+
+\newcommand\makecenter[1]{\raisebox{-0.5\height}{#1}}
+
+\mathchardef\mdash="2D
+
+\newenvironment{significant}{\begin{center}\begin{minipage}{0.9\textwidth}\centering\em}{\end{minipage}\end{center}}
+\DeclareRobustCommand{\rvdots}{%
+  \vbox{
+    \baselineskip4\p@\lineskiplimit\z@
+    \kern-\p@
+    \hbox{.}\hbox{.}\hbox{.}
+  }}
+\DeclareRobustCommand\tph[3]{{\texorpdfstring{#1}{#2}}}
+\makeatother

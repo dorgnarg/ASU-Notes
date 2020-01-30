@@ -1,0 +1,16 @@
+\contentsline {section}{\numberline {1}Sound System Overview \& Signal Flow}{3}{section.1}% 
+\contentsline {subsection}{\numberline {1.1}What is a sound system?}{3}{subsection.1.1}% 
+\contentsline {subsection}{\numberline {1.2}Signal Levels and Amplification}{4}{subsection.1.2}% 
+\contentsline {section}{\numberline {2}Engineering Overview}{5}{section.2}% 
+\contentsline {subsection}{\numberline {2.1}A Basic Layout Diagram}{5}{subsection.2.1}% 
+\contentsline {subsection}{\numberline {2.2}Review}{5}{subsection.2.2}% 
+\contentsline {subsubsection}{\numberline {2.2.1}Sound Systems Design Fundamentals}{5}{subsubsection.2.2.1}% 
+\contentsline {subsubsection}{\numberline {2.2.2}Dispersion}{5}{subsubsection.2.2.2}% 
+\contentsline {subsection}{\numberline {2.3}Types of Connectors}{6}{subsection.2.3}% 
+\contentsline {subsection}{\numberline {2.4}Audio Channels and Common Configurations}{8}{subsection.2.4}% 
+\contentsline {section}{\numberline {3}Design of Sound Systems II: Imagining}{9}{section.3}% 
+\contentsline {subsection}{\numberline {3.1}Imaging in Horizontal and Vertical Planes}{9}{subsection.3.1}% 
+\contentsline {subsection}{\numberline {3.2}Delay Times and Haas Effect}{9}{subsection.3.2}% 
+\contentsline {section}{\numberline {4}Design of Sound Systems III: Sub-Systems}{10}{section.4}% 
+\contentsline {subsection}{\numberline {4.1}Phase, Phasing, Polarity}{10}{subsection.4.1}% 
+\contentsline {subsection}{\numberline {4.2}Surrounds, Subwoofers, Sub-Systems, and Unconventional Stagings}{10}{subsection.4.2}% 

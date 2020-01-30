@@ -1,0 +1,9 @@
+\contentsline {part}{I\hspace {1em}Loudspeakers}{4}{part.1}% 
+\contentsline {section}{\numberline {1}System Design Building Blocks}{5}{section.1}% 
+\contentsline {subsection}{\numberline {1.1}Decibel Math}{5}{subsection.1.1}% 
+\contentsline {subsubsection}{\numberline {1.1.1}Logarithms (and their Applications)}{5}{subsubsection.1.1.1}% 
+\contentsline {subsection}{\numberline {1.2}Inverse Square Law}{6}{subsection.1.2}% 
+\contentsline {subsection}{\numberline {1.3}Reference Signals}{7}{subsection.1.3}% 
+\contentsline {subsubsection}{\numberline {1.3.1}Sine Waves}{7}{subsubsection.1.3.1}% 
+\contentsline {subsubsection}{\numberline {1.3.2}Fourier}{7}{subsubsection.1.3.2}% 
+\contentsline {subsubsection}{\numberline {1.3.3}Noise}{7}{subsubsection.1.3.3}% 

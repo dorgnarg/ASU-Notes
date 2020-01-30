@@ -1,0 +1,173 @@
+\documentclass[a4paper]{article}
+
+\def\nterm {Spring}
+\def\nyear {2020}
+\def\nlecturer {Dan Perelstein}
+\def\ncourse {Sound Systems Design and Engineering}
+
+\input{header}
+
+\begin{document}
+\maketitle
+
+\tableofcontents
+\clearpage
+
+\part{Loudspeakers}
+
+\section{System Design Building Blocks}
+\subsection{Decibel Math}
+The decibel (dB) involves the use of a logarithm to allow large differences and
+numbers to be written as conveniently small numbers. A decibel is a ratio
+between two pressure levels (ie. the measure of deviation of air at a certain
+point due to sound). These get big so quickly that logarithms quickly become
+necessary.
+
+There are two definitions for decibels:
+\begin{align*}
+	\mathrm{dB} &= 10\log_{10}\left(\frac{A}{B}\right)\\
+	\mathrm{dB} &= 20\log_{10}\left(\frac{A}{B}\right)
+\end{align*}
+The first definition is in reference to power, the second in reference to
+voltage. In this class, we'll only work with the second one, as that's the one
+that is generally useful for sound. The first one is useful when talking about
+power amplifiers. For the future, we'll write $\log$ instead of $\log_{10}$ for
+the sake of simplicity.
+
+$A$ is the pressure value we want to measure, and $B$ is the reference value.
+The reference value we use ($B$) is the quietest sound that it's possible to
+hear.
+
+\subsubsection{Logarithms (and their Applications)}
+A base-10 logarithm like we'll be using answers the question ``what exponent
+does 10 need to be raised to to equal our value?''
+For example, $10^1 = 10$, so
+\[
+	\log(10) = 1
+\]
+This asks the question ``what exponent does 10 need to be raised to to equal
+10,'' for which the answer is 1.
+Another example, $10^0 = 1$, so
+\[
+	\log(1) = 0
+\]
+This asks the question ``what expoent does 10 need to be raised to to equal
+1,'' for which the answer is zero.
+
+Logarithms convert multiplication into simple addition and division into simple
+subtraction. Written out, what this means is that we can write $\log(AB)$
+instead as
+\[
+	\log(AB) = \log(A) + \log(B)
+\]
+Similarly, we can also write $\log(A/B)$ as
+\[
+	\log\left(\frac{A}{B}\right) = \log(A) - \log(B)
+\]
+
+There's another important thing to note about logarithms. If we measure the
+sound pressure level (SPL) at some point to be $x$ dB, that means that we know
+\[
+	x = 20\log\left(\frac{A}{B}\right)
+\]
+How do the number of decibels change for a sound twice as strong?
+\begin{align*}
+	20\log\left(2\frac{A}{B}\right)
+	&= 20\log(2) + 20\log\left(\frac{A}{B}\right)\\
+	&= 20\log(2) + x\\
+	&= 20(.03) + x\\
+	&= 6 \mathrm{dB} + x \mathrm{dB}
+\end{align*}
+What this means is that any time we double the pressure of the sound, we're
+adding $6$ dB.\\
+Let's see what happens if we do this but we half it instead:
+\begin{align*}
+	20\log\left(\frac{1}{2}\frac{A}{B}\right) &= 
+	20\log\left(\frac{A}{2B}\right)\\
+	&= 20\log\left(\frac{A}{B}\right) - 20\log(2)\\
+	&= x \mathrm{dB} - 6 \mathrm{dB}
+\end{align*}
+So, halving the pressure level means we subtract $6$ dB.\\
+One more example: what happens if we have an SPL ten times as large?
+\begin{align*}
+	20\log\left(10\frac{A}{B}\right) &=
+	20\log(10) + 20\log\left(\frac{A}{B}\right)\\
+	&= 20(1) + x\\
+	&= 20 \mathrm{dB} + x \mathrm{dB}
+\end{align*}
+This means that to get a sound with ten times the pressure, we have to add
+exactly 20 dB.
+
+\subsection{Inverse Square Law}
+As an introduction, the surface area of a sphere is
+\[
+	\text{Surface Area} = 4\pi r^2
+\]
+where $r$ is the radius of a sphere. Note that if we double the radius, there
+will be 4 times as much surface area.
+
+The inverse square law isn't just a sound thing---it's common between sound,
+gravitational pull, electric field strength, radiation, etc. If we have a point
+source that obeys the inverse square law (imagine, for example, a speaker in
+the air broadcasting sound equally in all directions), the intensity of a sound
+is inversly proportional to the distance from the source (as distance
+increases, intensity decreases, and visa-versa). Specifically, they're
+inversely proportional with a square relationship (hence the name). For
+example, if we move away from the source a distance of 2m, the intensity drops
+to 1/4 of what it was. This is because the sound is being projected in a
+sphere, and as we get farther away, the surface area is increasing, but the
+total sound pressure isn't increasing, so the sound has to spread out more to
+cover the area.
+
+As an example. If a speaker 1 ft away from you has volume $x$. At 2 ft, it
+would have volume of $\frac{1}{4}x$. At 3 ft, $\frac{1}{9}x$. At 4 ft,
+$\frac{1}{16}x$. And so on. We get these numbers by squaring the distance and
+putting it on the bottom.
+
+An important conclusion from this: if you're using surround sound (ie. sound
+from behind the audience), you'll get more even coverage if you put the
+speakers farther behind the audience. If the speakers are, for example, 1 ft
+behind the back of the audience, the volume even 6 feet away (one or 2 rows up)
+will be already $\frac{1}{36}$ the intensity since it's 6 times as far.
+On the other hand, if we put the
+speakers 12 ft away from the last audience member, the volume 6 feet away (one
+or 2 rows up) is only 1.5 times as far away, so it's only $\frac{4}{9}$ as
+quiet (if I'm doing my math right). This still isn't the best, but it's a lot
+better. We can also use vertical height to increase the distance from the
+audience without having to go as far back.
+
+\subsection{Reference Signals}
+\subsubsection{Sine Waves}
+Sine waves are patterns of air pressure where the pressure in some direction
+can be modelled using a sine curve (very generally, this means that areas of
+high pressure happen at regular, predictable intervals at regular, predictable
+maximum intensities, and areas of low pressure similarly happen at regular,
+predictable intervals and with regular, predictable minimum intensities).
+
+\subsubsection{Fourier}
+Fourier found in the 1820s that any signal, no matter how
+complicated, can be written as the sume of sine waves at different amplitudes
+and at different phase relationships. Through Fourier analysis, we can convert
+from looking at a signal as a function of time, to looking at a signal as a
+function of frequency. Theoretically, we could totally replicate anything we
+hear or record with a sum of sine waves, but that would take literally tens of
+thousands of sine waves every moment, so it's hard.
+
+\subsubsection{Noise}
+There's two types of reference noise we use: white noise and pink noise. White
+noise has more audible high end than pink noise, and pink noise has more
+audible low-end. White noise has equal amplitude at every frquency. Pink noise
+takes white noise and applies a ``pinking'' filter, which takes away 3 dB per
+octave. There are more frequencies at a given octave at high frequencies, so in
+white noise, the high frequencies have much, much more energy, making them
+overpower the lower octaves. The goal with pink noise is to give us something
+that sounds like it's evenly distributed betwen notes.
+Here's the difference between white and pink noise (respectively) on a frequency
+spectrum:\\
+\begin{center}
+	\includegraphics[width=0.45\textwidth]{WhiteNoise.png}
+	\includegraphics[width=0.45\textwidth]{PinkNoise.png}
+\end{center}
+
+
+\end{document}

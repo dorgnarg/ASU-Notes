@@ -1,0 +1,201 @@
+\documentclass[a4paper]{article}
+
+\def\nterm {Spring}
+\def\nyear {2020}
+\def\nlecturer {Dan Perelstein}
+\def\ncourse {THP 350: Sound Design}
+
+\input{header}
+
+\begin{document}
+\maketitle
+
+\tableofcontents
+
+\section{Sound System Overview \& Signal Flow}
+
+\subsection{What is a sound system?}
+The sound systm is the selection and configuration of the loudspeakers,
+microphones, equipment, and specification of connections between all the
+elements. The sound system is designed uniquely for every production, based on
+and influenced by:
+\begin{itemize}
+	\item Text of the play
+	\item Director/choreographer's vision
+	\item Venue
+		\begin{itemize}
+			\item Layout
+			\item Acoustics
+		\end{itemize}
+	\item Scenic design
+		\begin{itemize}
+			\item What sounds make sense given the scene being
+				seen?
+		\end{itemize}
+	\item Conventions and audience expectations
+		\begin{itemize}
+			\item Doing something different or unique is allowed,
+				but it should be a thought-through choice
+		\end{itemize}
+	\item Available Inventory
+	\item Constraints from other departments
+\end{itemize}
+Every sound system will have the same basic structure:
+\begin{enumerate}
+	\item Sound source(s)
+		\begin{itemize}
+			\item Mics
+			\item Keyboards
+			\item Synths
+			\item Guitars
+			\item DI Boxes
+				\begin{itemize}
+					\item Takes an error-prone signal and
+						makes it stronger, clearer, and
+						protected from interference
+					\item Converts from an unbalanced
+						signal to a balanced signal
+				\end{itemize}
+			\item Computers
+			\item CD Players
+			\item Etc.
+		\end{itemize}
+	\item Mixer (``console,'' ``desk,'' ``board'')
+		\begin{itemize}
+			\item Pre-amp (``head amp'') is the first step of this stage
+		\end{itemize}
+	\item Power amplifiers (``amps'')
+	\item Loudspeakers
+	\item Audience/performer's ears
+\end{enumerate}
+There are some common variations on this system:
+\begin{itemize}
+	\item Combo amps: Items ii-iv are combined in one place
+	\item Active/powered loudspeaker: A loudspeaker with an amplifier
+		built-in
+		\begin{itemize}
+			\item Might have a power cable, indicator light,
+				screen, etc.
+		\end{itemize}
+\end{itemize}
+
+\subsection{Signal Levels and Amplification}
+Another ``narrative'' of a sound system is that of a quiet sound becoming a
+much larger/louder sound. Each step in the system is a way to step up the
+signal level from the quietest to the loudest.
+
+There are basically three signal levels:
+\begin{enumerate}
+	\item Mic/Instrument Level
+		\begin{itemize}
+			\item Level of the signal coming directly from a
+				mic/input
+			\item Approx. 2-20 mV
+		\end{itemize}
+	\item Line Level
+		\begin{itemize}
+			\item Level of the signal coming from the console after
+				pre-amplification (or the gain stage)
+			\item Approx. 2-20 V
+		\end{itemize}
+	\item Speaker Level
+		\begin{itemize}
+			\item Level of the signal coming to the speakers after
+				power amplification
+			\item Approx. 10-50 V
+		\end{itemize}
+\end{enumerate}
+
+
+
+\section{Engineering Overview}
+\subsection{A Basic Layout Diagram}
+\includegraphics[width=\textwidth]{BasicDiagram.png}
+
+\subsection{Review}
+\subsubsection{Sound Systems Design Fundamentals}
+There are two goals in sound system design:
+\begin{enumerate}
+	\item Reasonable choices in terms of imaging
+		\begin{itemize}
+			\item Imaging --- the idea that we can create a third,
+				imaginary sound using two different speakers.
+				The illusion of stereo
+		\end{itemize}
+	\item Even coverage for every audience member
+		\begin{itemize}
+			\item This can often be improved using fill speakers
+				for the first few rows
+		\end{itemize}
+\end{enumerate}
+
+\subsubsection{Dispersion}
+Sound varies based on your position relative to a loudspeaker in 2 ways:
+\begin{enumerate}
+	\item Distance from a loudspeaker
+		\begin{itemize}
+			\item The farther you are from a speaker, the quieter
+				the sound is
+		\end{itemize}
+	\item Axial position relative to speaker (ie. angle from the center
+		axis)
+		\begin{itemize}
+			\item The farther off-axis you go, the quieter the
+				sound is, and the more you lose higher
+				frequencies
+		\end{itemize}
+\end{enumerate}
+
+\subsection{Types of Connectors}
+\begin{enumerate}
+	\item XLR Microphone Cable\\
+		\includegraphics[width=0.5\textwidth]{XLR.jpg}\\
+		In audio, we use 3-pin XLRs (one pin is positive, one is
+		negative, one is ground). One cool thing about XLR connectors
+		is that they usually lock.
+	\item 1/4'' Instrument Cable\\
+		\includegraphics[width=0.5\textwidth]{Quarter.jpeg}\\
+		1/4'' cables can either be balanced or unbalanced. Balanced
+		cables have three conductors (tip, ring, sleeve, or TRS, for +,
+		-, and ground, respectively), and
+		unbalanced cables have two conductors (tip and sleeve, or TS,
+		for + and -, respectively).
+	\item 1/4'' Speaker Cable\\
+		These look basically the same, but they're thicker (different
+		gauge, can be used to pass more voltage).
+	\item SpeakOn Cable (NL2, NL4, NL8)\\
+		\includegraphics[width=0.5\textwidth]{NL2.jpeg}\\
+		Thick balanced cables that can lock. They carry more voltage
+		than 1/4'' cables.
+	\item Bare Wire Speaker Cable\\
+		Balanced or unbalanced, no connector, it's just the wires
+		straight. Usually used in situations where there's no movement
+		or chance of tripping.
+	\item RCA Cable\\
+		\includegraphics[width=0.5\textwidth]{RCA.jpeg}\\
+		Low-voltage unbalanced cable.
+	\item 1/8'' to dual XLR adapter (aka ``iPod Cable'')\\
+		\includegraphics[width=0.5\textwidth]{18XLR.jpeg}\\
+\end{enumerate}
+
+\subsection{Audio Channels and Common Configurations}
+Common audio channel configurations:
+\begin{itemize}
+	\item Mono (one output to one speaker)
+	\item Dual mono (same signal to both speakers, or totally different
+		signals to each, like two different mono signals)
+	\item Stereo (signal shared across two speakers---panning is possible)
+	\item 5.1, 7.1, etc. (usually just for film---we sometimes replicate
+		similar things in theatre, but industry film standards don't
+		really work for us)
+\end{itemize}
+
+\section{Design of Sound Systems II: Imagining}
+\subsection{Imaging in Horizontal and Vertical Planes}
+\subsection{Delay Times and Haas Effect}
+
+\section{Design of Sound Systems III: Sub-Systems}
+\subsection{Phase, Phasing, Polarity}
+\subsection{Surrounds, Subwoofers, Sub-Systems, and Unconventional Stagings}
+
+\end{document}
