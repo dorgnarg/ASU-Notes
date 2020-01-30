@@ -1,0 +1,95 @@
+\contentsline {section}{\numberline {1}Introduction/Review}{4}{section.1}% 
+\contentsline {subsection}{\numberline {1.1}Postulate 1: The State of a System}{4}{subsection.1.1}% 
+\contentsline {subsection}{\numberline {1.2}Postulate 2: Observables and Operators}{5}{subsection.1.2}% 
+\contentsline {subsection}{\numberline {1.3}Postulate 3: Measurements in Quantum Mechanics}{5}{subsection.1.3}% 
+\contentsline {subsection}{\numberline {1.4}Postulate 4: Probabilistic Interpretation}{5}{subsection.1.4}% 
+\contentsline {subsubsection}{\numberline {1.4.1}Simultaneity of Measurements}{6}{subsubsection.1.4.1}% 
+\contentsline {subsection}{\numberline {1.5}Typical Representations}{6}{subsection.1.5}% 
+\contentsline {paragraph}{Properties of the Bases}{7}{paragraph*.1}% 
+\contentsline {subsection}{\numberline {1.6}Postulate 5: Time Evolution of a System}{8}{subsection.1.6}% 
+\contentsline {subsection}{\numberline {1.7}Typical Applications}{8}{subsection.1.7}% 
+\contentsline {subsubsection}{\numberline {1.7.1}Particle in External Electromagnetic Fields}{8}{subsubsection.1.7.1}% 
+\contentsline {paragraph}{Newton's Law}{8}{paragraph*.2}% 
+\contentsline {subsubsection}{\numberline {1.7.2}The One-Dimensional Quantum Harmonic Oscillator; The Ladder Method}{11}{subsubsection.1.7.2}% 
+\contentsline {section}{\numberline {2}Time-Dependent Perturbation Theory}{13}{section.2}% 
+\contentsline {subsection}{\numberline {2.1}The Pictures of Quantum Mechanics}{13}{subsection.2.1}% 
+\contentsline {subsubsection}{\numberline {2.1.1}The Scchr\"odinger Picture}{13}{subsubsection.2.1.1}% 
+\contentsline {subsubsection}{\numberline {2.1.2}The Heisenberg Picture}{13}{subsubsection.2.1.2}% 
+\contentsline {paragraph}{The Heisenberg Equation of Motion}{14}{paragraph*.3}% 
+\contentsline {subsubsection}{\numberline {2.1.3}The Dirac (Interaction) Picture}{14}{subsubsection.2.1.3}% 
+\contentsline {subsection}{\numberline {2.2}Time-Dependent Perturbation Theory}{15}{subsection.2.2}% 
+\contentsline {subsubsection}{\numberline {2.2.1}Time-Dependent Perturbation Theory}{15}{subsubsection.2.2.1}% 
+\contentsline {subsubsection}{\numberline {2.2.2}Transition Probabilities}{18}{subsubsection.2.2.2}% 
+\contentsline {subsubsection}{\numberline {2.2.3}Transition Probability for Constant Perturbation}{19}{subsubsection.2.2.3}% 
+\contentsline {subsubsection}{\numberline {2.2.4}Transition Probability for a Harmonic Perturbation}{19}{subsubsection.2.2.4}% 
+\contentsline {subsection}{\numberline {2.3}Adiabatic and Sudden Approximations}{20}{subsection.2.3}% 
+\contentsline {subsubsection}{\numberline {2.3.1}Adiabatic Approximation}{20}{subsubsection.2.3.1}% 
+\contentsline {subsubsection}{\numberline {2.3.2}Sudden Approximation}{22}{subsubsection.2.3.2}% 
+\contentsline {subsection}{\numberline {2.4}Absorption and Emission of Radiation}{23}{subsection.2.4}% 
+\contentsline {subsubsection}{\numberline {2.4.1}Classical Treatment of Radiation}{24}{subsubsection.2.4.1}% 
+\contentsline {subsubsection}{\numberline {2.4.2}Spontaneous Emission (Einstein's A \& B Coefficients)}{27}{subsubsection.2.4.2}% 
+\contentsline {subsubsection}{\numberline {2.4.3}Quantization of the Electromagnetic Field}{29}{subsubsection.2.4.3}% 
+\contentsline {subsubsection}{\numberline {2.4.4}Transition Rates for Absorption and Emission}{32}{subsubsection.2.4.4}% 
+\contentsline {paragraph}{Emission}{32}{paragraph*.4}% 
+\contentsline {paragraph}{Absorption}{33}{paragraph*.5}% 
+\contentsline {subsubsection}{\numberline {2.4.5}Dipole Approximation}{33}{subsubsection.2.4.5}% 
+\contentsline {subsubsection}{\numberline {2.4.6}Spontaneous Emission (Differential Rate)}{33}{subsubsection.2.4.6}% 
+\contentsline {subsubsection}{\numberline {2.4.7}Lyman Transitions}{35}{subsubsection.2.4.7}% 
+\contentsline {subsubsection}{\numberline {2.4.8}Selection Rules for Electric Dipole Transitions}{36}{subsubsection.2.4.8}% 
+\contentsline {subsubsection}{\numberline {2.4.9}Lifetime of an Excited State}{38}{subsubsection.2.4.9}% 
+\contentsline {section}{\numberline {3}Scattering and Born Approximations}{39}{section.3}% 
+\contentsline {subsection}{\numberline {3.1}Classical Scattering Theory}{39}{subsection.3.1}% 
+\contentsline {subsubsection}{\numberline {3.1.1}Impact Parameter}{39}{subsubsection.3.1.1}% 
+\contentsline {subsubsection}{\numberline {3.1.2}Differential Cross Section}{39}{subsubsection.3.1.2}% 
+\contentsline {subsubsection}{\numberline {3.1.3}Scattering on a Sphere}{39}{subsubsection.3.1.3}% 
+\contentsline {subsection}{\numberline {3.2}Quantum Scattering Theory}{40}{subsection.3.2}% 
+\contentsline {subsubsection}{\numberline {3.2.1}Differential Cross-Section}{40}{subsubsection.3.2.1}% 
+\contentsline {subsubsection}{\numberline {3.2.2}Scattering Amplitude}{40}{subsubsection.3.2.2}% 
+\contentsline {subsubsection}{\numberline {3.2.3}Differential Cross Section in terms of f}{42}{subsubsection.3.2.3}% 
+\contentsline {subsubsection}{\numberline {3.2.4}Integral Form of the Schr\"odinger Equation}{43}{subsubsection.3.2.4}% 
+\contentsline {subsubsection}{\numberline {3.2.5}Asymptotic Form of the Wave Function}{46}{subsubsection.3.2.5}% 
+\contentsline {subsection}{\numberline {3.3}The Born Approximation}{47}{subsection.3.3}% 
+\contentsline {subsubsection}{\numberline {3.3.1}The First Born Approximation}{47}{subsubsection.3.3.1}% 
+\contentsline {subsubsection}{\numberline {3.3.2}The Validity of the First Born Approximation}{48}{subsubsection.3.3.2}% 
+\contentsline {subsubsection}{\numberline {3.3.3}Born Approximation Estimate for the Coulomb Potential}{49}{subsubsection.3.3.3}% 
+\contentsline {subsection}{\numberline {3.4}Partial Wave Analysis}{49}{subsection.3.4}% 
+\contentsline {subsubsection}{\numberline {3.4.1}Partial Wave Analysis}{49}{subsubsection.3.4.1}% 
+\contentsline {subsubsection}{\numberline {3.4.2}Determination of Partial Waves}{53}{subsubsection.3.4.2}% 
+\contentsline {subsubsection}{\numberline {3.4.3}Hard Sphere Scattering}{55}{subsubsection.3.4.3}% 
+\contentsline {subsection}{\numberline {3.5}Phase Shifts}{56}{subsection.3.5}% 
+\contentsline {subsubsection}{\numberline {3.5.1}Phase Shifts}{56}{subsubsection.3.5.1}% 
+\contentsline {subsection}{\numberline {3.6}Scattering from a Delta Function Potential}{57}{subsection.3.6}% 
+\contentsline {subsection}{\numberline {3.7}Scattering of Identical Particles}{60}{subsection.3.7}% 
+\contentsline {subsubsection}{\numberline {3.7.1}Scattering of Spin-0 Bosons}{60}{subsubsection.3.7.1}% 
+\contentsline {subsubsection}{\numberline {3.7.2}Scattering of Spin-1/2 Fermions}{60}{subsubsection.3.7.2}% 
+\contentsline {section}{\numberline {4}Quasiclassical (WKB) Approximation}{62}{section.4}% 
+\contentsline {subsection}{\numberline {4.1}The Applicability of the WKB Approximation}{63}{subsection.4.1}% 
+\contentsline {subsection}{\numberline {4.2}Connection Formulas}{64}{subsection.4.2}% 
+\contentsline {subsection}{\numberline {4.3}The Bohr-Sommerfeld Quantization Condition}{66}{subsection.4.3}% 
+\contentsline {subsection}{\numberline {4.4}Energy Levels of the Harmonic Oscillator}{66}{subsection.4.4}% 
+\contentsline {subsection}{\numberline {4.5}Bound States in the Potential with One Rigid Wall}{67}{subsection.4.5}% 
+\contentsline {subsection}{\numberline {4.6}Bound States in the Potential with Two Rigid Walls}{68}{subsection.4.6}% 
+\contentsline {subsection}{\numberline {4.7}Tunneling through a Potential Barrier}{68}{subsection.4.7}% 
+\contentsline {subsection}{\numberline {4.8}Cold Emission of Electrons from Metal}{70}{subsection.4.8}% 
+\contentsline {section}{\numberline {5}Berry's Phase}{71}{section.5}% 
+\contentsline {subsection}{\numberline {5.1}Nonholonomic Process}{71}{subsection.5.1}% 
+\contentsline {subsection}{\numberline {5.2}Geometric Phase}{71}{subsection.5.2}% 
+\contentsline {subsubsection}{\numberline {5.2.1}Electron in a Slowly Changing Magnetic Field}{72}{subsubsection.5.2.1}% 
+\contentsline {subsection}{\numberline {5.3}The Aharamov-Bohm Effect}{76}{subsection.5.3}% 
+\contentsline {subsubsection}{\numberline {5.3.1}Particle in the Vicinity of a Solenoid}{76}{subsubsection.5.3.1}% 
+\contentsline {subsubsection}{\numberline {5.3.2}Gauge Transformation of a Wave Function}{77}{subsubsection.5.3.2}% 
+\contentsline {subsubsection}{\numberline {5.3.3}Aharamov-Bohm Experiment}{78}{subsubsection.5.3.3}% 
+\contentsline {subsubsection}{\numberline {5.3.4}AB Effect = Berry's Phase}{78}{subsubsection.5.3.4}% 
+\contentsline {section}{\numberline {6}Magnetic Monopoles}{79}{section.6}% 
+\contentsline {section}{\numberline {7}Basics of the Path Integral}{81}{section.7}% 
+\contentsline {subsection}{\numberline {7.1}Propagator}{81}{subsection.7.1}% 
+\contentsline {paragraph}{Properties of $K$}{81}{paragraph*.6}% 
+\contentsline {subsection}{\numberline {7.2}Propagator for a Free System}{82}{subsection.7.2}% 
+\contentsline {subsection}{\numberline {7.3}Feynman Path Integral}{83}{subsection.7.3}% 
+\contentsline {subsection}{\numberline {7.4}Stationary Phase}{83}{subsection.7.4}% 
+\contentsline {subsection}{\numberline {7.5}Tunneling and Instantons}{83}{subsection.7.5}% 
+\contentsline {subsection}{\numberline {7.6}Propagator for a Quantum Mechanical Oscillator}{83}{subsection.7.6}% 
+\contentsline {section}{\numberline {8}Homework and Solutions}{84}{section.8}% 
+\contentsline {subsection}{\numberline {8.1}Homework 1 (\ref {intro} - \ref {hw1:e})}{84}{subsection.8.1}% 
+\contentsline {subsection}{\numberline {8.2}Homework 2 (\ref {hw2:b} - \ref {hw2:e})}{88}{subsection.8.2}% 
+\contentsline {subsection}{\numberline {8.3}Homework 3 (\ref {hw3:b} - \ref {hw3:e})}{90}{subsection.8.3}% 

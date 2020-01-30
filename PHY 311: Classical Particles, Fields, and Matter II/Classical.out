@@ -1,0 +1,52 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Electrostatics}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{The Electric Field}{section.2}% 3
+\BOOKMARK [3][-]{subsubsection.2.1.1}{Definitions and Properties}{subsection.2.1}% 4
+\BOOKMARK [3][-]{subsubsection.2.1.2}{Vector Integral Theorems: Divergence}{subsection.2.1}% 5
+\BOOKMARK [3][-]{subsubsection.2.1.3}{Vector Integral Theorems: Curl}{subsection.2.1}% 6
+\BOOKMARK [3][-]{subsubsection.2.1.4}{The Helmholtz Theorem}{subsection.2.1}% 7
+\BOOKMARK [2][-]{subsection.2.2}{The Electric Potential}{section.2}% 8
+\BOOKMARK [3][-]{subsubsection.2.2.1}{Definition and Properties}{subsection.2.2}% 9
+\BOOKMARK [3][-]{subsubsection.2.2.2}{The Equations of Poisson and Laplace}{subsection.2.2}% 10
+\BOOKMARK [2][-]{subsection.2.3}{Work and Energy in Electrostatics}{section.2}% 11
+\BOOKMARK [3][-]{subsubsection.2.3.1}{Relationship Between Work and the Electric Potential}{subsection.2.3}% 12
+\BOOKMARK [3][-]{subsubsection.2.3.2}{Energies Associated with Assemblies of Electric Charge}{subsection.2.3}% 13
+\BOOKMARK [2][-]{subsection.2.4}{Conductors}{section.2}% 14
+\BOOKMARK [3][-]{subsubsection.2.4.1}{Basic Concepts and Results}{subsection.2.4}% 15
+\BOOKMARK [3][-]{subsubsection.2.4.2}{Forces on the Surfaces of Conductors}{subsection.2.4}% 16
+\BOOKMARK [3][-]{subsubsection.2.4.3}{Capacitance}{subsection.2.4}% 17
+\BOOKMARK [1][-]{section.3}{Potentials}{}% 18
+\BOOKMARK [1][-]{section.4}{Electric Fields in Matter}{}% 19
+\BOOKMARK [1][-]{section.5}{Magnetostatics}{}% 20
+\BOOKMARK [2][-]{subsection.5.1}{Magnetic Fields and Forces}{section.5}% 21
+\BOOKMARK [3][-]{subsubsection.5.1.1}{The Lorentz Force}{subsection.5.1}% 22
+\BOOKMARK [3][-]{subsubsection.5.1.2}{The Continuity Equation}{subsection.5.1}% 23
+\BOOKMARK [3][-]{subsubsection.5.1.3}{The Biot-Savart Law}{subsection.5.1}% 24
+\BOOKMARK [2][-]{subsection.5.2}{The Magnetic Field and the Vector Potential}{section.5}% 25
+\BOOKMARK [3][-]{subsubsection.5.2.1}{Ampere's Law and B}{subsection.5.2}% 26
+\BOOKMARK [3][-]{subsubsection.5.2.2}{Maxwell's Equations for Static Charges and Currents}{subsection.5.2}% 27
+\BOOKMARK [3][-]{subsubsection.5.2.3}{The Vector Potential A}{subsection.5.2}% 28
+\BOOKMARK [2][-]{subsection.5.3}{Comparison of Electrostatics and Magnetostatics}{section.5}% 29
+\BOOKMARK [1][-]{section.6}{Magnetic Fields in Matter}{}% 30
+\BOOKMARK [2][-]{subsection.6.1}{Magnetization Phenomena in Materials}{section.6}% 31
+\BOOKMARK [3][-]{subsubsection.6.1.1}{Magnetic Materials}{subsection.6.1}% 32
+\BOOKMARK [3][-]{subsubsection.6.1.2}{Bound Currents in Materials}{subsection.6.1}% 33
+\BOOKMARK [2][-]{subsection.6.2}{The Auxiliary Field H}{section.6}% 34
+\BOOKMARK [3][-]{subsubsection.6.2.1}{Ampere's Law in Magnetized Materials}{subsection.6.2}% 35
+\BOOKMARK [3][-]{subsubsection.6.2.2}{A Deceptive Parallel}{subsection.6.2}% 36
+\BOOKMARK [3][-]{subsubsection.6.2.3}{Boundary Conditions}{subsection.6.2}% 37
+\BOOKMARK [2][-]{subsection.6.3}{Linear and Non-Linear Magnetic Materials}{section.6}% 38
+\BOOKMARK [3][-]{subsubsection.6.3.1}{Magnetic Susceptibility and Permeability}{subsection.6.3}% 39
+\BOOKMARK [3][-]{subsubsection.6.3.2}{Nonlinear Materials: Ferromagnetism}{subsection.6.3}% 40
+\BOOKMARK [1][-]{section.7}{Electrodynamics}{}% 41
+\BOOKMARK [2][-]{subsection.7.1}{Electromotive Force \(emf\)}{section.7}% 42
+\BOOKMARK [3][-]{subsubsection.7.1.1}{Ohm's Law}{subsection.7.1}% 43
+\BOOKMARK [3][-]{subsubsection.7.1.2}{Electromotive Force}{subsection.7.1}% 44
+\BOOKMARK [2][-]{subsection.7.2}{Motional emf}{section.7}% 45
+\BOOKMARK [2][-]{subsection.7.3}{Electromagnetic Induction}{section.7}% 46
+\BOOKMARK [3][-]{subsubsection.7.3.1}{Faraday's Law}{subsection.7.3}% 47
+\BOOKMARK [3][-]{subsubsection.7.3.2}{Inductance}{subsection.7.3}% 48
+\BOOKMARK [3][-]{subsubsection.7.3.3}{Energy in Magnetic Fields}{subsection.7.3}% 49
+\BOOKMARK [2][-]{subsection.7.4}{Maxwell's Equations}{section.7}% 50
+\BOOKMARK [3][-]{subsubsection.7.4.1}{The Displacement Current}{subsection.7.4}% 51
+\BOOKMARK [3][-]{subsubsection.7.4.2}{Maxwell's Equations}{subsection.7.4}% 52

@@ -1,0 +1,74 @@
+\contentsline {section}{\numberline {0}Introduction}{4}{section.0}
+\contentsline {section}{\numberline {1}Relativity}{5}{section.1}
+\contentsline {subsection}{\numberline {1.1}Newtonian/Galilean Relativity}{5}{subsection.1.1}
+\contentsline {subsubsection}{\numberline {1.1.0}Introduction and Definitions}{5}{subsubsection.1.1.0}
+\contentsline {subsubsection}{\numberline {1.1.1}Transformations Between Inertial Frames}{5}{subsubsection.1.1.1}
+\contentsline {subsection}{\numberline {1.2}The Propagation of Light}{6}{subsection.1.2}
+\contentsline {subsubsection}{\numberline {1.2.1}The Luminiferous \AE ther}{6}{subsubsection.1.2.1}
+\contentsline {subsubsection}{\numberline {1.2.2}The Michelson-Morley Experiment}{6}{subsubsection.1.2.2}
+\contentsline {subsection}{\numberline {1.3}Relativity and the Measurement of Lengths and Time Intervals}{6}{subsection.1.3}
+\contentsline {subsubsection}{\numberline {1.3.0}A Thought Experiment: The Relativity of Simultaneity}{6}{subsubsection.1.3.0}
+\contentsline {subsubsection}{\numberline {1.3.1}Time Dilation}{6}{subsubsection.1.3.1}
+\contentsline {subsubsection}{\numberline {1.3.2}Definitions of Recurring Expressions}{8}{subsubsection.1.3.2}
+\contentsline {subsubsection}{\numberline {1.3.3}Length Expansion and Contraction}{8}{subsubsection.1.3.3}
+\contentsline {subsection}{\numberline {1.4}The Lorentz Transformations and Relattivistic Kinematics}{9}{subsection.1.4}
+\contentsline {subsubsection}{\numberline {1.4.1}Lorentz Transformations}{9}{subsubsection.1.4.1}
+\contentsline {subsubsection}{\numberline {1.4.2}Velocity Transformations}{10}{subsubsection.1.4.2}
+\contentsline {subsubsection}{\numberline {1.4.3}The Doppler Effect}{10}{subsubsection.1.4.3}
+\contentsline {subsubsection}{\numberline {1.4.4}Minkowski Diagrams}{10}{subsubsection.1.4.4}
+\contentsline {subsection}{\numberline {1.5}Relativistic Dynamics}{13}{subsection.1.5}
+\contentsline {subsubsection}{\numberline {1.5.1}Energy, Momentum, and Mass}{13}{subsubsection.1.5.1}
+\contentsline {subsubsection}{\numberline {1.5.2}Elastic Collisions}{14}{subsubsection.1.5.2}
+\contentsline {subsubsection}{\numberline {1.5.3}Inelastic Collisions}{14}{subsubsection.1.5.3}
+\contentsline {section}{\numberline {2}Quantum Mechanics in Three Dimensions}{15}{section.2}
+\contentsline {subsection}{\numberline {2.1}Spherical Schr\"odinger Equation}{15}{subsection.2.1}
+\contentsline {subsubsection}{\numberline {2.1.1}The General Three-Dimensional Schr\"odinger Equation}{15}{subsubsection.2.1.1}
+\contentsline {subsubsection}{\numberline {2.1.2}The Three-Dimensional Schr\"odinger Equation in Spherical Coordinates}{15}{subsubsection.2.1.2}
+\contentsline {paragraph}{The Angular Equation and Spherical Harmonics}{16}{paragraph*.1}
+\contentsline {paragraph}{The Radial Equation}{16}{paragraph*.2}
+\contentsline {subsubsection}{\numberline {2.1.3}The Free Particle}{17}{subsubsection.2.1.3}
+\contentsline {subsubsection}{\numberline {2.1.4}The Infinite Spherical Well}{17}{subsubsection.2.1.4}
+\contentsline {subsubsection}{\numberline {2.1.5}The Spherical Harmonic Oscillator}{18}{subsubsection.2.1.5}
+\contentsline {subsection}{\numberline {2.2}The Hydrogen Atom}{18}{subsection.2.2}
+\contentsline {subsubsection}{\numberline {2.2.1}The Solution}{18}{subsubsection.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.2}The Radial Wave Function}{19}{subsubsection.2.2.2}
+\contentsline {subsubsection}{\numberline {2.2.3}The Ground State of the Hydrogen Atom}{21}{subsubsection.2.2.3}
+\contentsline {subsubsection}{\numberline {2.2.4}Laguerre Equations}{21}{subsubsection.2.2.4}
+\contentsline {subsubsection}{\numberline {2.2.5}The Energy Spectrum of Hydrogen}{21}{subsubsection.2.2.5}
+\contentsline {subsection}{\numberline {2.3}Angular Momentum}{22}{subsection.2.3}
+\contentsline {subsubsection}{\numberline {2.3.1}Angular Momentum Eigenvalues}{22}{subsubsection.2.3.1}
+\contentsline {subsubsection}{\numberline {2.3.2}Angular Momentum Eigenfunctions}{24}{subsubsection.2.3.2}
+\contentsline {subsection}{\numberline {2.4}Spin}{25}{subsection.2.4}
+\contentsline {subsubsection}{\numberline {2.4.1}Foundations}{25}{subsubsection.2.4.1}
+\contentsline {subsubsection}{\numberline {2.4.2}Spin 1/2}{26}{subsubsection.2.4.2}
+\contentsline {subsubsection}{\numberline {2.4.3}Electrons in a Magnetic Field}{28}{subsubsection.2.4.3}
+\contentsline {subsubsection}{\numberline {2.4.4}Addition of Angular Momenta}{28}{subsubsection.2.4.4}
+\contentsline {section}{\numberline {3}Quantum Mechanics for Identical Particles}{30}{section.3}
+\contentsline {subsection}{\numberline {3.1}Two-Particle Systems}{30}{subsection.3.1}
+\contentsline {subsubsection}{\numberline {3.1.1}Bosons and Fermions}{30}{subsubsection.3.1.1}
+\contentsline {subsubsection}{\numberline {3.1.2}Exchange Forces}{31}{subsubsection.3.1.2}
+\contentsline {subsection}{\numberline {3.2}Atoms}{33}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}Atomic Hamiltonians}{33}{subsubsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2}The Periodic Table}{33}{subsubsection.3.2.2}
+\contentsline {subsection}{\numberline {3.3}Solids}{35}{subsection.3.3}
+\contentsline {subsubsection}{\numberline {3.3.1}Free Electron Gas}{36}{subsubsection.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.2}Band Structure}{38}{subsubsection.3.3.2}
+\contentsline {section}{\numberline {4}Applications and Approximation Methods}{41}{section.4}
+\contentsline {subsection}{\numberline {4.1}Time-Independent Perturbation Theory}{41}{subsection.4.1}
+\contentsline {subsubsection}{\numberline {4.1.1}Nondegenerate Perturbation Theory}{41}{subsubsection.4.1.1}
+\contentsline {paragraph}{First-Order Corrections}{42}{paragraph*.3}
+\contentsline {paragraph}{Second-Order Corrections}{43}{paragraph*.4}
+\contentsline {subsubsection}{\numberline {4.1.2}Degenerate Perturbation Theory}{44}{subsubsection.4.1.2}
+\contentsline {subsection}{\numberline {4.2}The Variational Principle}{47}{subsection.4.2}
+\contentsline {subsubsection}{\numberline {4.2.1}Theory}{47}{subsubsection.4.2.1}
+\contentsline {paragraph}{Perturbation Theory and the Variational Method}{49}{paragraph*.5}
+\contentsline {subsubsection}{\numberline {4.2.2}Examples}{49}{subsubsection.4.2.2}
+\contentsline {subsection}{\numberline {4.3}A Finer Look at Hydrogen}{51}{subsection.4.3}
+\contentsline {subsubsection}{\numberline {4.3.1}The Fine Structure of Hydrogen}{51}{subsubsection.4.3.1}
+\contentsline {paragraph}{The Relativistic Correction}{51}{paragraph*.6}
+\contentsline {paragraph}{Spin-Orbit Coupling}{53}{paragraph*.7}
+\contentsline {paragraph}{The Fine Structure}{55}{paragraph*.8}
+\contentsline {subsubsection}{\numberline {4.3.2}Hyperfine Splitting}{55}{subsubsection.4.3.2}
+\contentsline {subsection}{\numberline {4.4}Splitting from Electric and Magnetic Fields}{55}{subsection.4.4}
+\contentsline {subsubsection}{\numberline {4.4.1}Electric Fields: The Stark Effect}{55}{subsubsection.4.4.1}
+\contentsline {subsubsection}{\numberline {4.4.2}Magnetic Fields: The Zeeman Effect}{55}{subsubsection.4.4.2}
