@@ -1,4 +1,4 @@
-PWD /home/dan/Documents/THP Sound/THP494
+PWD /home/dan/Documents/School Notes/THP 494: Sound System Design and Engineering
 INPUT /etc/texmf/web2c/texmf.cnf
 INPUT /usr/share/texmf/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
@@ -249,8 +249,6 @@ INPUT /usr/share/texmf/fonts/tfm/public/cm/cmss8.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/cm/cmtt10.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/cm/cmtt8.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/cm/cmtt8.tfm
-INPUT /usr/share/texmf/fonts/tfm/public/cm/cmti10.tfm
-INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
 INPUT /usr/share/texmf/fonts/tfm/public/cm/cmr17.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/cm/cmr12.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/cm/cmr8.tfm
@@ -277,6 +275,8 @@ INPUT /usr/share/texmf/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/cm/cmr9.tfm
+INPUT /usr/share/texmf/fonts/tfm/public/cm/cmti10.tfm
+INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
 INPUT /usr/share/texmf/fonts/tfm/public/cm/cmr12.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/cm/cmbx12.tfm
 INPUT Systems.toc

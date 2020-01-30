@@ -169,5 +169,68 @@ spectrum:\\
 	\includegraphics[width=0.45\textwidth]{PinkNoise.png}
 \end{center}
 
+\section{Loudspeakers}
+\subsection{An Introduction to Loudspeakers}
+Speakers are transducers: electronic components that convert one type of signal
+to another. Specifically, speakers convert signals from electrical energy to
+mechanical/acoustic energy.
+
+Ideally, we want to be able to produce every sound that humans can hear (20 Hz
+to 20 kHz) so we can recreate the sounds we're trying to represent as
+accurately as possible. This is usually not really possible
+
+\subsection{The -6 dB Point}
+
+\section{Vertical Coverage and Fill}
+
+\subsection{Tilt}
+
+\subsection{Fill Systems}
+\subsubsection{Downfill}
+
+\subsubsection{Front Fill}
+If the stage is tall, or downfill speakers would make the imaging very strange
+(that is, would make a person's voice sound like it's coming from unreasonably
+high rather than from themselves), we can instead use a front fill speaker or
+system. Front fill speakers are placed directly in front of the audience, with
+their axis pointed at the highest relavent audience memeber out of coverage
+from the main speaker. In a standard theatre, front fill speakers can only
+cover about the first three rows. We need to take the same frequency response
+differences into consideration as with downfill speakers.
+
+\subsubsection{Delay}
+What if we're not out of axial coverage, but out of distance coverage? We can
+extend the coverage of the main loudspeaker by adding another loudspeaker where
+we lose coverage (at the 6 dB point). We want in this case to aim not
+necessarily for the objectively highest audience member, but the highest
+audience member that we're aiming for with that speaker. This additional
+distance fill speaker is called a delay speaker (or a delay system, if we have
+multiple). We call it a delay speaker becase we'll have to delay the signal
+going to it to account for how slowly sound moves through air.\\
+There are some holes in frequency response, so we will have to include both
+high %CHECK
+and low frequencies.
+
+\subsubsection{A Rule of Thumb for Number of Speakers}
+
+We can figure out roughly how many speakers we need with Bob McCarthy's formula
+\[
+	\frac{\text{Distance to the farthest person}}{\text{Distance to the
+	closest person}} - 1
+\]
+This also tracks if we think in terms of decibels: for example, if this formula
+gives us $1$ because of a $2:1$ ratio, that means there's a $-6 \mathrm{dB}$
+difference from the closest to the nearest, so we only need one speaker.
+
+\subsubsection{Output Delay}
+
+Sound is unique from stuff like light because it's really slow. Light, for
+example, moves at about $3,000,000$ m/s, whereas sound only travels at $340.29$
+m/s, or roughly $1,000$ ft/s, or $1$ ft/ms.
+In the time that it would take a beam of light to go around the Earth, a
+sound would only go about $150$ feet.\\
+Especially when we're talking about delay speakers or systems, we need to pay
+attention to this: we need to add delay equal to the time it takes for the
+sound from the main speaker to reach the delay speaker.
 
 \end{document}
