@@ -1,4 +1,4 @@
-PWD /home/dan/Documents/School Notes/THP 494: Sound System Design and Engineering
+PWD /home/dan/Documents/ASU/Notes/THP 494: Sound System Design and Engineering
 INPUT /etc/texmf/web2c/texmf.cnf
 INPUT /usr/share/texmf/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
@@ -291,6 +291,9 @@ INPUT ./WhiteNoise.png
 INPUT PinkNoise.png
 INPUT ./PinkNoise.png
 INPUT ./PinkNoise.png
+INPUT phase.png
+INPUT ./phase.png
+INPUT ./phase.png
 INPUT Systems.aux
 INPUT ./Systems.out
 INPUT ./Systems.out
@@ -305,4 +308,5 @@ INPUT /usr/share/texmf/fonts/type1/public/amsfonts/cm/cmr7.pfb
 INPUT /usr/share/texmf/fonts/type1/public/amsfonts/cm/cmr8.pfb
 INPUT /usr/share/texmf/fonts/type1/public/amsfonts/cm/cmr9.pfb
 INPUT /usr/share/texmf/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+INPUT /usr/share/texmf/fonts/type1/public/amsfonts/cm/cmsy7.pfb
 INPUT /usr/share/texmf/fonts/type1/public/amsfonts/cm/cmti10.pfb

@@ -15,7 +15,7 @@
 \section{Sound System Overview \& Signal Flow}
 
 \subsection{What is a sound system?}
-The sound systm is the selection and configuration of the loudspeakers,
+The sound system is the selection and configuration of the loudspeakers,
 microphones, equipment, and specification of connections between all the
 elements. The sound system is designed uniquely for every production, based on
 and influenced by:
@@ -192,7 +192,47 @@ Common audio channel configurations:
 
 \section{Design of Sound Systems II: Imagining}
 \subsection{Imaging in Horizontal and Vertical Planes}
+Imaging refers to where the sound seems to be coming from. This class will
+mostly be focused on imaging rather than coverage (see systems design for more
+about coverage). We want to be able to read a play and figure out where sounds
+are coming from. In general, we would ideally want to have a speaker set
+exactly where a sound is supposed to be coming from.\\
+It's generally easier for people to locate sounds with more precision in the
+horizontal plane, compared to the vertical plane. That means if a sound is
+horizontally offset, it's much more noticable than if a sound is vertically
+offset. The farther away we get, the more we can fudge vertically (as people
+get closer to on-axis, it's easier to fool people).
+
+When we're discussing this, we are talking about localization: determining
+where exactly a sound is coming from. It's realted to imaging, but not exactly
+the same thing.
+
+To determine the position of a sound, we use two things: the direct(ness) of
+the sound, and the high-frequency content of the sound. If we hear a lot of
+reflections in the sound, it's harder to tell where a sound is coming from.
+Similarly, if we hear muffled high frequencies in a sound, it's harder to tell
+where a sound is coming from. We can take advantage of these to mask where a
+sound is coming from and make it sound more naturalistic than it really is.
+Especially, if something is supposed to be coming from ``outside'', we can
+force the sounds to deflect a lot more and remove some of the high frequencies.
+We care about \emph{bounce}. A bounce loudspeaker is a loudspeaker that is, for
+example, put in a corner facing the wall, so we're just getting the reflected
+(or ``bounced'') sound.
+
+We always point non-bounce loudspeakers towards the audience. Even if the logic
+of the prop in the context of the play would imply that it should point
+elsewhere, point them towards the audience. Another exception is
+monitor/foldback speakers.
+
 \subsection{Delay Times and Haas Effect}
+In order to determine where sound is coming from, our brain makes use of volume
+differences and arrival time distance. Sound travels about 1 ft per ms.
+The Haas effect is related to this: when
+two sounds come from different directions with sufficiently small delay ($<
+40$ms), listeners perceive it as being part of the same sound.
+
+Because sound travels so slowly, to make the sound feel like it's actually
+coming from the right location in terms of depth, we can digitally add delay.
 
 \section{Design of Sound Systems III: Sub-Systems}
 \subsection{Phase, Phasing, Polarity}

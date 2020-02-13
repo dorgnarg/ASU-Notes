@@ -180,8 +180,23 @@ to 20 kHz) so we can recreate the sounds we're trying to represent as
 accurately as possible. This is usually not really possible
 
 \subsection{The -6 dB Point}
+Remember that -6 dB represents halving the sound pressure level (SPL) of a
+signal. The width that the manufacturers give for a loudspeaker is generally
+going to e the point at which the volume is 6 dB lower than it is at the same
+distance on-axis. These levels are measured at 1 kHz, since the
+high-frequencies attenuate at different rates than low frequencies when you're
+going off-axis. If we want even coverage, we want to line up the 6 dB point of
+one loudspeaker with the 6 dB point of the other. If we overlap too much, we'll
+get areas with more than 0 dB, and if we separate them too much, we'll get
+areas with less than 6 dB.
 
 \section{Vertical Coverage and Fill}
+We generally want to range of audience experiences to be within 6 dB, as much
+as possible. Putting speakers vertically exactly on-axis can make that really
+difficult if we don't have a very long spacec, because the front audience
+member very close to the speaker and like 6 audience members back might have a
+-12 dB difference. There's two things we can do to fix that: first, we can move
+vertically instead of horizontally.
 
 \subsection{Tilt}
 
@@ -232,5 +247,132 @@ sound would only go about $150$ feet.\\
 Especially when we're talking about delay speakers or systems, we need to pay
 attention to this: we need to add delay equal to the time it takes for the
 sound from the main speaker to reach the delay speaker.
+
+\section[Horizontal Coverage]{Comb-Filtering: Coverage in the Horizontal Plane}
+
+\subsection{Phasing/Comb-Filtering}
+
+When you hear the same sound from 2 different loudspeakers, or you pick up the
+sound from two different microphones, it sounds bad in unpredictable ways. As
+much as possible, we want our sounds to be heard from only one loudspeaker, and
+we want our sounds to be picked up by only one microphone. We'll be mostly
+talking about loudspeakers right now.
+
+When two sine waves interact, the resultant combined sine wave is equal to the
+sume of the two sine waves. We can see how this happens below: if the waves
+come in at the same time, they'll boost each other by double in every place. If
+they're coming in $180^\circ$ out of phase, which is half a cycle behind, 
+they'll cancel each other out exacty. Phase is related to the time that the two
+waves come in relative to each other (that is, $90^\circ$ out of phase, means
+that the second wave comes in 1/4 of a cycle later than the first one).
+
+\begin{center}
+	\includegraphics[width=0.75\textwidth]{phase.png}
+\end{center}
+
+When two sounds are added, we get interference. There are two types of
+interference:
+\begin{enumerate}
+	\item Constructuve interference: the two waves are combining so that
+		they're adding to each other---the resultant wave amplitude 
+		in that location is greater than either of the waves
+		individually
+	\item Destructive interference: the two waves are combining so that
+		they're subtracting from each other---the resultant wave
+		amplitude in that location is smaller than one or both of the
+		waves individually
+\end{enumerate}
+Maximum constructive/destructive interference happens when the waves double
+each other or totally cancel each other out (respectively).
+
+We can also apply this to pink noise: when we delay one pink noise signal
+compared to another, it forces the resultant pink noise to have nodes (places
+where certain frequencies are decreased). The farther apart we set the pink
+noises, the more nodes we have and the lower they go, since lower frequencies
+require a farther distance to be totally out of phase. This \emph{also} also
+applies to sounds in general: voices, music, etc. At around 30-40ms later, we
+hear it as a delay rather than a drequency response issue.
+
+For loudspeakers, the ``problem path'' is where there's little difference in
+volume, but noticeable time offsets, because this is what causes more intense
+comb filtering. We prefer level offsets much more over time offsets, and level
+offsets can help compensate for time offsets a little bit. This means we want
+to minimize the region of overlap, because what's where we run into issues of
+comb filtering (and echo, potentially).
+
+With microphones, we talk about the 3:1 rule: however far your first
+microphone is from a source, your second source should be at least 3x that
+distance.
+
+\subsection{Focus in Plan: Pan}
+
+True stereo isn't really possible for more than a couple poeople at a time down
+the center line of the speakers. It also gets less exciting the farther back
+you go---very far back, the angular width of stereo differences gets pretty
+small, and it's not really that exciting any more. For the people outside of
+this range, a change in pan just winds up being a level change.
+
+Bob McCarthy gives a rule, which we can use as a starting point but doesn't
+always work, for how to place loudspeakers. He says to divide the audience in
+two, then point the loudspeakers at the center of each of these halves.
+
+Important: in the horizontal plane especially, parts of your system \emph{will}
+overlap in coverage. The important thing to consider is the relationship
+between level and arrival time: they should either be as similar as possible,
+or as different as possible.
+
+\subsection{Fill Systems in Plan: Extending Horizontal Coverage}
+
+Like in the vertical plane, we figure out how to point the speakers for maximum
+coverage (and minimum overlap), and add fill speakers where there is no
+coverage to fill in the difference. Like with vertical fill systems, horizontal
+fill systems are named pretty self-explanatorily, like center fill, side fill,
+etc.
+
+\part{Mix Engineering}
+
+\section{Analog Mix Engineering}
+
+\subsection{Bus Architecture}
+
+\subsection{Analog Consoles}
+
+\section[Additional Considerations]{Additional Considerations for the Engineer}
+
+\subsection{Analog Patching}
+
+\subsection{RF Basics}
+
+\section{Stages of Amplification}
+
+\subsection{Power Amplifiers}
+
+\subsection{Gain Structure}
+
+\section{Paperwork}
+
+\section{Microphones}
+
+\subsection{How Microphones Work}
+
+\subsection{Selectio and Deployment of Microphones}
+
+\subsection{Feedback}
+
+\subsection{A:D and D:A Conversion}
+
+\section{Digital Mix Engineering}
+
+\subsection{DCA Assignments}
+
+\subsection{Digital Consoles}
+
+\section{Delaying Larger Systems}
+
+\subsection{Input Delays}
+
+\subsection{Delay Matrixing}
+
+\subsection{Staging Zones}
 
 \end{document}
