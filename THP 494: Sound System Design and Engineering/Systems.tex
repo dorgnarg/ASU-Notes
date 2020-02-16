@@ -190,15 +190,22 @@ one loudspeaker with the 6 dB point of the other. If we overlap too much, we'll
 get areas with more than 0 dB, and if we separate them too much, we'll get
 areas with less than 6 dB.
 
-\section{Vertical Coverage and Fill}
+\section{Vertical Coverage and Tilt}
 We generally want to range of audience experiences to be within 6 dB, as much
 as possible. Putting speakers vertically exactly on-axis can make that really
 difficult if we don't have a very long spacec, because the front audience
 member very close to the speaker and like 6 audience members back might have a
 -12 dB difference. There's two things we can do to fix that: first, we can move
-vertically instead of horizontally.
+vertically instead of horizontally. Then, the distance from the nearest
+audience member and the distance to the farthest audience member is closer to
+being the same. Similarly, if we have the space, we can try to move it
+horizontally farther away. That way, the ratio of distance between the closest
+and farthest audience member is only 1:2 instead of 1:4 or something.
 
-\subsection{Tilt}
+We should try to aim or speakers such that they are pointed at the farthest
+audience member in the vertical plane. For a raked audience, this usually menas
+pointing at the top/back row. We want to try to create a situation where gain
+differences due to axial position and distance compensate for each other.
 
 \subsection{Fill Systems}
 \subsubsection{Downfill}
@@ -334,6 +341,61 @@ etc.
 \section{Analog Mix Engineering}
 
 \subsection{Bus Architecture}
+
+A bus refers to console outputs. Buses are organizational tools that collect
+audio inputs on route to a common destination. For example, if we want to send
+a mix to the stage manager that's separate from the main mix, we could say that
+those mixes are on two different buses. Buses are used in analog consoles,
+digital consoles, recording studios, live sound, DAWs, etc. Although this is in
+the analog console section, it's not specific to analog consoles, this is just
+the first time it was convenient to bring it up.
+
+There are a few basic types of busses, which we'll go over in more detail in
+the following sections:
+\begin{itemize}
+	\item Aux (or variable send)
+	\item Group (or fixed send)
+	\item Stereo/mono (or master)
+	\item Matrix
+\end{itemize}
+
+\subsubsection{Aux Bus}
+Aux busses, also known as mix busses, are variable sends---this means that you
+can control how much sound gets sent to this bus individually, as a function of
+the fader and the aux send. Aux busses can only receive input channels. Aux
+busses are usually used for effects sends (eg. reverb) or monitors.
+
+\subsubsection{Group Bus}
+Group busses are fixed sends---this means that you can't independently control
+how much goes to the group bus, only whether or not sound is going to it. The
+volume of the channel going to the group is just set by the fader. Group busses
+can also only receive input channels. Group busses are typically used to group
+channels together that are headed towards other output busses. A good example
+is grouping up all the drum mics before sending them to the main output.
+
+\subsubsection{Master Bus}
+Also fixed sends, and also controlled by the main fader. Master busses can
+receive any combination of input channels and output busses, unlike the last
+two. When the term ``stereo bus'' is used to refer to these, it's ued in a
+generic sense of the term (ie. two speakers), not the literal definition of
+stereo.
+
+\subsubsection{Matrix}
+Matrices are variable send busses, but matrices can receive only some
+combintion of output busses. The levels in the sends are a function of matrix
+sends and the fader level. Matrices are basically aux busses, but for other
+busses rather than input channels. These are typically used to combine output
+busses to fill systems.
+
+\subsubsection{Pre-Fade vs. Post-Fade}
+This is only relavent for aux sends and matrix sends. These sends can be
+pre-fade or post-fade. Pre-fade busses mean that the audio is diverted to the
+aux bus before it's sent to the fader, so both the fader and the send get
+the same input (ie. the send volume doesn't rely on the fader---the main mix
+will have no effect on the bus). Post-fade
+busses have audio diverted after the fader, so the input for the send is the
+same as the output of the fader (ie. the send volume also relies on the
+fader---changing the main mix will change the volume going to the bus as well).
 
 \subsection{Analog Consoles}
 
