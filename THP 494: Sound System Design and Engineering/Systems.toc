@@ -29,23 +29,32 @@
 \contentsline {subsubsection}{\numberline {5.1.3}Master Bus}{16}{subsubsection.5.1.3}% 
 \contentsline {subsubsection}{\numberline {5.1.4}Matrix}{17}{subsubsection.5.1.4}% 
 \contentsline {subsubsection}{\numberline {5.1.5}Pre-Fade vs. Post-Fade}{17}{subsubsection.5.1.5}% 
-\contentsline {subsection}{\numberline {5.2}Analog Consoles}{17}{subsection.5.2}% 
 \contentsline {section}{\numberline {6}Additional Considerations}{18}{section.6}% 
-\contentsline {subsection}{\numberline {6.1}Analog Patching}{18}{subsection.6.1}% 
-\contentsline {subsection}{\numberline {6.2}RF Basics}{18}{subsection.6.2}% 
-\contentsline {section}{\numberline {7}Stages of Amplification}{19}{section.7}% 
-\contentsline {subsection}{\numberline {7.1}Power Amplifiers}{19}{subsection.7.1}% 
-\contentsline {subsection}{\numberline {7.2}Gain Structure}{19}{subsection.7.2}% 
-\contentsline {section}{\numberline {8}Paperwork}{20}{section.8}% 
-\contentsline {section}{\numberline {9}Microphones}{21}{section.9}% 
-\contentsline {subsection}{\numberline {9.1}How Microphones Work}{21}{subsection.9.1}% 
-\contentsline {subsection}{\numberline {9.2}Selectio and Deployment of Microphones}{21}{subsection.9.2}% 
-\contentsline {subsection}{\numberline {9.3}Feedback}{21}{subsection.9.3}% 
-\contentsline {subsection}{\numberline {9.4}A:D and D:A Conversion}{21}{subsection.9.4}% 
-\contentsline {section}{\numberline {10}Digital Mix Engineering}{22}{section.10}% 
-\contentsline {subsection}{\numberline {10.1}DCA Assignments}{22}{subsection.10.1}% 
-\contentsline {subsection}{\numberline {10.2}Digital Consoles}{22}{subsection.10.2}% 
-\contentsline {section}{\numberline {11}Delaying Larger Systems}{23}{section.11}% 
-\contentsline {subsection}{\numberline {11.1}Input Delays}{23}{subsection.11.1}% 
-\contentsline {subsection}{\numberline {11.2}Delay Matrixing}{23}{subsection.11.2}% 
-\contentsline {subsection}{\numberline {11.3}Staging Zones}{23}{subsection.11.3}% 
+\contentsline {subsection}{\numberline {6.1}RF Basics}{18}{subsection.6.1}% 
+\contentsline {subsection}{\numberline {6.2}Analog Patching}{19}{subsection.6.2}% 
+\contentsline {section}{\numberline {7}Stages of Amplification}{21}{section.7}% 
+\contentsline {subsection}{\numberline {7.1}Gain Structure}{21}{subsection.7.1}% 
+\contentsline {subsection}{\numberline {7.2}Power Amplifiers}{21}{subsection.7.2}% 
+\contentsline {section}{\numberline {8}Paperwork}{23}{section.8}% 
+\contentsline {section}{\numberline {9}Microphones}{24}{section.9}% 
+\contentsline {subsection}{\numberline {9.1}How Microphones Work}{24}{subsection.9.1}% 
+\contentsline {subsection}{\numberline {9.2}Selection and Deployment of Microphones}{24}{subsection.9.2}% 
+\contentsline {subsection}{\numberline {9.3}Feedback}{24}{subsection.9.3}% 
+\contentsline {subsection}{\numberline {9.4}A:D and D:A Conversion}{24}{subsection.9.4}% 
+\contentsline {section}{\numberline {10}Digital Mix Engineering}{25}{section.10}% 
+\contentsline {subsection}{\numberline {10.1}DCA Assignments}{25}{subsection.10.1}% 
+\contentsline {subsection}{\numberline {10.2}Digital Consoles}{25}{subsection.10.2}% 
+\contentsline {section}{\numberline {11}Delaying Larger Systems}{26}{section.11}% 
+\contentsline {subsection}{\numberline {11.1}Input Delays}{26}{subsection.11.1}% 
+\contentsline {subsection}{\numberline {11.2}Delay Matrixing}{26}{subsection.11.2}% 
+\contentsline {subsection}{\numberline {11.3}Staging Zones}{26}{subsection.11.3}% 
+\contentsline {section}{\numberline {12}Concert Audio}{27}{section.12}% 
+\contentsline {subsection}{\numberline {12.1}Subwoofer Deployment}{27}{subsection.12.1}% 
+\contentsline {subsection}{\numberline {12.2}Cardioid Subwoofers}{27}{subsection.12.2}% 
+\contentsline {subsection}{\numberline {12.3}Line Array Theory}{27}{subsection.12.3}% 
+\contentsline {section}{\numberline {13}Control Systems}{28}{section.13}% 
+\contentsline {subsection}{\numberline {13.1}MIDI, OSC}{28}{subsection.13.1}% 
+\contentsline {subsection}{\numberline {13.2}Networking Basics}{28}{subsection.13.2}% 
+\contentsline {subsection}{\numberline {13.3}Dante Overview}{28}{subsection.13.3}% 
+\contentsline {section}{\numberline {14}System Tuning}{29}{section.14}% 
+\contentsline {subsection}{\numberline {14.1}SMAART Software and Approach}{29}{subsection.14.1}% 

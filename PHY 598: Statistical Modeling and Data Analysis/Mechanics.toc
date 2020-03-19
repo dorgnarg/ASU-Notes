@@ -1,0 +1,3 @@
+\contentsline {section}{\numberline {1}Feb 18, 2020}{3}{section.1}% 
+\contentsline {subsection}{\numberline {1.1}Expectation Maximization}{3}{subsection.1.1}% 
+\contentsline {subsection}{\numberline {1.2}Bayesian Logic: An Introduction}{3}{subsection.1.2}% 

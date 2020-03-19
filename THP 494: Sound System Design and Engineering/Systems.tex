@@ -397,27 +397,248 @@ busses have audio diverted after the fader, so the input for the send is the
 same as the output of the fader (ie. the send volume also relies on the
 fader---changing the main mix will change the volume going to the bus as well).
 
-\subsection{Analog Consoles}
-
 \section[Additional Considerations]{Additional Considerations for the Engineer}
 
-\subsection{Analog Patching}
-
 \subsection{RF Basics}
+RF stands for radio frequency---it's the umbrella term for all wireless
+devices. We're familiar with air traveling through air/water/etc as acoustical
+signal (ie. pressure waves). We're also familiar with the idea of audio
+travelling through cables as voltage information. RF is similar---the audio
+signal moves through the air as electromagnetic signal (like light), which can
+be decoded by the receiver. 
+
+Like audio, the electromagnetic waves that the signal travels on has amplitude
+and wavelength/frequency. Note that these refer to the characteristics of the
+transmission, not the characteristics of the sounds they carry. Unlike sound
+waves, RF waves travel
+at the speed of light, and have some polarization (ie. the waves are aligned in
+some axis)---this means that antennae have to be in the same direction of the
+polarized signal.
+
+RF transmission is referred to as TX, and receiving is referred to as RX.
+
+Receivers work by taking a small band of frequencies in the EM spectrum and
+listening to them. This is usually written as a single frequency, but in
+reality, it's a narrow region around that frequency. Receivers have no way of
+knowing whether what they're picking up is what it's supposed to be, or just
+unrelated noise at that frequency. Our job is to make sure that the RF signal
+is the strongest thing at that frequency so we don't have to worry about this.
+
+Some types of attenas:
+\begin{itemize}
+	\item Whip antenna\\
+		Most basic kinds, omnidirectional. Comes in half-wave and
+		quarter-wave sizes. Quarter-waves are less precise, although
+		tbh neither are particularly precise. They're fine if you don't
+		have a lot of noise, but not very preferable otherwise.
+	\item Log periodice (paddle, sharkfin)\\
+		Cardioid directional pattern, roughly 150$^\circ$ wide.
+	\item Helical\\
+		Thinner conic pattern (60$^\circ$), picks up any polarization.
+\end{itemize}
+
+RF distro (distribution) allows one pair of antennas to feed multiple
+receivers.
+
+Bodies absorb RF really easily. We want to put our receivers high in the air,
+giving it a good line of sight. In general, if an obstacle is small compared to
+the wavelength of the signal, it won't affect it much, but if the obstacle is
+large, it will block it much more. The inverse is true for windows or holes.
+
+We
+also sometimes need to worry about multi-path interference: that is, sometimes
+RF signal
+will reflect off of a surface, and antennas will pick up both the original
+signal and the reflected signal. This is a lot like comb filtering: the two
+signals are arriving out of phase, which can mean we have huge attenuation of
+signal. This is why we can randomly lose signals in certain places. In order to
+fix this, we worry about diversity: we keep multiple (usually 2) antennas at
+one time, and the receiver will use the signal from whichever antenna is
+getting the strongest signal. In order to achieve multi-path diversity, we
+actually want to keep them pretty close to each other (they should be within
+1/4 to 1 wavelength apart). In our RF operating ranges, this means 3-12 inches
+for high frequencies and 12-46 inches for low frequencies. We can usually call
+this ``about a rack width apart.''
+
+There are other kinds of diversity we might want to pay attention to as well:
+\begin{itemize}
+	\item Coverage area\\
+		You can have multiple antennas in two different areas, of one
+		of the antennas can't cover the whole area. THere will still be
+		multi-path dropout.
+	\item  Polarization\\
+		You can have one antenna vertically and one horizontally, so
+		that if signal polarization changes, we can still get signal.
+		We can combine this with multipath diversity by having both at
+		45 degree angles.
+	\item Obstacles\\
+		Similar to coverage area, if there's going to be a big
+		obstacle, we can use an antenna to compensate.
+\end{itemize}
+
+One last form of interference: intermods/intermodulation interference. Every
+time we introduce a new transmitter, it introduces some ambient noise and
+random peaks from interacting with the other frequencies, mucking up the RF
+spectrum. The locations of these depends on the relationship between the
+frequencies. The height depends on the distance between the transmitters. The
+main solution is to calculate the intermods when selecting the operating
+frequencies to make sure that we won't be getting intermods where we have other
+devices operating. Fortunately, there's a lot of software that can calculate
+this for you.
+
+\subsection{Analog Patching}
+Patching refers to plugging the output of one device into the input of another.
+It refers to the signal flow between devices.
+This is not to be confused with routing, which lays out the signal flow within
+a single device. In a sound system, things don't need to be hard-patched to
+each other in an inflexible way. We can include patchbays at various points in
+the signal flow, allowing you to flexibly patch the flow where you want it.
+This means that we can just plug inputs/outputs where it's most convenient and
+patch them where they need to be, rather than needing to run it all the way to
+the right channel when it might be more difficult that way.
+
+Some patchbays operate in ``normal'' configuration. This means that there's a
+default when no cables are plugged into the front, where the inputs and outputs
+are correlated 1:1, and plugging in a patch cable overrides that internal
+connection.
 
 \section{Stages of Amplification}
 
-\subsection{Power Amplifiers}
-
 \subsection{Gain Structure}
+Throughout the audio signal chain, there are a lot of places to adjust gain
+(ie. the strength of the electrical signal which correlates with volume). Where
+and when do we want to be adding or removing gain? There are 4 big places to
+change gain: preamp, volume fader, output fader, and amplifier. When you bring
+up the signal too high at the early stage, it's easier to get clipping, and if
+it's too low at an early stage, you wind up having to amplify later in the
+signal chain, picking up all the extra noise in the system. Clipping can happen
+at any point in the gain stage, but sometimes for different reasons (ie. if the
+amp gain is too high and causes clipping, it's usually because the speakers
+themselves are being driven too hard and might be damaged, but at the preamp
+level, you're just trying to push through more voltage than it's able to). You
+want to be up as loud as possible without clipping early in the signal chain
+(leave yourself some headroom).
+
+\subsection{Power Amplifiers}
+Power amps (usually just called amps) come right before the speakers. Amps
+convert line level signal (1-10 V) to speaker level signal (10-50 V). Amps are
+not transiducers because they don't convert between types of energy, they just
+modify the electrical signal.  Ideally, the amps don't do anything other than
+make the sound signal louder (although they will always color the sound in some
+way, like all components in the signal chain).
+
+Stereo mode: each input goes to its respective output (1 to 1, 2 to 2). Bridged
+mono: the first input goes to both outputs, the second input is ignored.
+Bridged mono is useful because it can produce more power than stereo mode,
+which is helpful for bigger speakers.
+
+We can daisy-chain loudspeakers together: we can send the same signal to each
+speaker in a chain by physically connecting them together. This assumes, of
+course, that we have enough power coming from the speakers to do this for the
+number of speakers we're trying to chain together. This will decrease the
+impedance of the load by putting the speakers in parallel (ie. two 8 $\Omega$
+speakers will have a total impedance of 4 $\Omega$). Usually, if we use more
+than 3 loudspeakers on a single chain, we start getting into fire hazard
+territory, so we don't want to go above that. The amp spec sheet will tell us
+the power the amp can deliver to different impedances. If the amp doesn't give
+a spec for a particular load, don't try it, because that can be a fire hazard
+(ie. don't go lower than the minimum impedance listed).
+
+We also have to consider how much power we're delivering to a loudspeaker,
+usually called power handling, power rating, or power capacity
+(but not always---just look for the measurement
+in Watts). We want to make sure the amp isn't providing more power than the
+speaker is able to handle, breaking the speaker. Many list stats for
+continuous (rms), program, and peak power. Continuous refers to an indefinite
+sine wave, program refers to a more complicated signal (a shorter speech/music
+source, for example), and peak refers to an impulse response, like a snare drum
+hit or a plosive in a speech.
+When you're planning amps on a circuit,
+always plan for the max (probably)---if the spec sheet tells you a max current
+draw, that's also ideal.
+
+In order to determine matching up speakers and amps, we need to first match up
+the impedance of the loudpspeaker to the impedance ratings of the amps, and the
+power capacity of the speaker vs the power driven by the amp to a speaker with
+that impedance. As a rule of thumb, we want the peak power of the amp to be in
+the ballpark of half of what the speaker can handle (anything more than that
+runs potential damage to the speaker).
+
+We also want to look at sensitivity, which tells us how loud a speaker is in
+response to a given amount of power. It will be given as dB SPL 1W @ 1m
+distance (ie. decibels of sound pressure level from a 1 Watt power delivery at
+1 meter distance). Higher sensitivity speakers will be louder, lower
+sensitivity will be quieter at a given power. We can easily calculate the level
+at other distances using the inverse square law (-6 dB per doubling). We can
+also calculate the level for other amounts of power by calculating the ratio of
+power delivered against 1 W.
 
 \section{Paperwork}
+There are four pieces of paperwork we should be responsible for as systems
+designers. The first two are our plan \& section plots like we've already
+talked about, the other two are our patch list, and our block diagram/signal
+flow diagram/system overview. These last two basically show the same
+information, just in different forms (one in writing, one graphically).
+
+The paperwork is an opportunity to share with your collaborators anything
+they'll need to know---make sure to include everything they need to know (and
+nothing they don't). The paperwork we're making here is largely used for
+communication between the designer and the engineer, but, for example, the
+plots will be used by other designers, technical directors, stage managers,
+etc.
+
+Audio paperwork is really poorly-standardized. There have been occassional
+attempts to standardize it (most recently in 2008 by USITT for block diagrams,
+the documentation for which is also in this folder),
+but most have been pretty unsuccessful. Because of that, we should consider on
+a case-by-case basis what we should include/exclude/label based on our audience
+rather than just following some rote guidelines.
+
+In our plots, we can (and usually should) include annotations--telling us, for
+example, what kind of speaker we're looking at, how many there are if they're
+stacked in that view, etc. In something like vectorworks, we use the Callout
+tool on the sheet layer (NOT the design layer). In our annotation, include:
+speaker number, speaker function, make/model, rigging.
+
+The patchlist shows detailed written information showing the signal flow
+between all the elements of the system (usually written in a spreadsheet). The
+block diagram, similarly, is where we bring the patchbay visually to life.
+Usually, each element is described with a labelled block, and every connected
+item is connected with a line.
 
 \section{Microphones}
 
 \subsection{How Microphones Work}
+Microphones are transducers: electronic components that comvert one type of
+energy into another (in this case, from acoustical energy to electronic energy,
+the opposite of speakers). There are three basic families of microphones:
+\begin{enumerate}
+	\item Condenser\\
+		Condenser microphones consist of a small parallel-place
+		capacitors (that is, two flat parallel conductors). The
+		distance between the plates affects the voltage across the
+		plates. Acoustical energy moves one of the plates, causing a
+		change in voltage proportional to the vibrations of the
+		acoustical energy. In order for this to work, though, we need
+		some charge on the capacitors (which we do with phantom power,
+		or sometimes just a battery). The diaphram of a condensor
+		microphone can be very light, making them potentially much more
+		sensitive (but also less durable).
+	\item Dynamic\\
+		Dynamic microphones, also called moving coil microphones,
+		are the most basic kinds of microphones. The vibrations in air
+		move a coil of wire around a magnet, which generates current
+		proportional to the sound vibrations.
+	\item Ribbon\\
+		Ribbon microphones are the most complicated. In these, we have
+		a magnet, and suspended in the middle of the magnet is a very
+		thin strip of corrugated metal (the ribbon). Acoustic energy
+		moves the ribbon in the magnetic field, generating a current,
+		much like dynamic microphones.
 
-\subsection{Selectio and Deployment of Microphones}
+\end{enumerate}
+
+\subsection{Selection and Deployment of Microphones}
 
 \subsection{Feedback}
 
@@ -436,5 +657,25 @@ fader---changing the main mix will change the volume going to the bus as well).
 \subsection{Delay Matrixing}
 
 \subsection{Staging Zones}
+
+\section[Concert Audio]{System Principles from Concert Audio}
+
+\subsection{Subwoofer Deployment}
+
+\subsection{Cardioid Subwoofers}
+
+\subsection{Line Array Theory}
+
+\section[Control Systems]{Control Systems and Networked Audio}
+
+\subsection{MIDI, OSC}
+
+\subsection{Networking Basics}
+
+\subsection{Dante Overview}
+
+\section[System Tuning]{System Tuning and Measurement Microphones}
+
+\subsection{SMAART Software and Approach}
 
 \end{document}

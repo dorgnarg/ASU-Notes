@@ -1,0 +1,83 @@
+\documentclass[a4paper]{article}
+
+\def\nterm {Fall}
+\def\nyear {2019}
+\def\nlecturer {Dr. Steve Presse}
+\def\ncourse {Unravelling the Noise}
+
+\input{header}
+
+\begin{document}
+\maketitle
+
+\tableofcontents
+
+\section{Feb 18, 2020}
+
+\subsection{Expectation Maximization}
+In order to estimate the parameters, $\theta$, from our observations, $y$, we
+must use expectation maximization (EM). The function we're trying to maximize
+is
+\[
+	p(y_{1:N} | \theta) = \sum_{x_{1:N}} p(y_{1:N},x_{1:N} | \theta)
+\]
+Remember that we want to do this by maximizing the log of this, because we want
+to avoid numerical underflow. But maximizing the logarithm of a sum is very
+difficult. Much more difficult, in fact, than maximizing the sum of logs.
+Expectation Maximization is based around the idea that we don't have to
+actually maximize $\log\left(p(y_{1:N} | \theta)\right)$, we can instead
+maximize the expectation value of $p(y_{1:N},x_{1:N} | \theta)$, which we also
+call $Q(\theta,\theta^{old})$,
+\[
+	Q(\theta,\theta^{old}) = 
+	\sum_{x_{1:N}}\ln\left(p(y_{1:N},x_{1:N}|\theta)\right)
+	p(y_{1:N},x_{1:N}|\theta^{\old})
+\]
+
+EM has two (iterative) steps:
+\begin{enumerate}
+	\item First, compute the expectation value,
+		\[
+			\sum_{x_{1:N}}
+			f_{\theta}(x_{1:N})\ln\left(p(y_{1:N},x_{1:N}|\theta)\right)
+		\]
+		The result will usually be a function of $\theta$.
+	\item Next, we maximize the expectation value with respect to the
+		unknown parameters $\theta$.
+\end{enumerate}
+If we're doing this iteratively, we can write the expectation instead as
+\[
+	Q_{\theta^{old}}(\theta) = \sum_{x_{1:N}} \d x_{1:N} f_{\theta^{old}}
+	\ln\left(p(x_{1:N},y_{1:N}|\theta)\right)
+\]
+
+As an example to illuminate how EM works, suppose we have a two-state system,
+where $x_n \in \{1,2\}$, so
+\[
+	x_n \sim \mathrm{Categorical}[\pi_1,\pi_2]
+\]
+We can expect that
+\[
+	y_n \sim \mathrm{Normal}[\mu_{x_n},\nu_{x_n}]
+\]
+Thus,
+\[
+	\theta = \left\{\mu_1,\mu_2,\nu_1,\nu_2,\pi_1,\pi_2\right\}
+\]
+So we can write
+\begin{align*}
+	p(x_n|\theta) &= \pi_1^{\delta_{1,x_n}}\pi_2^{\delta_{2,x_n}}\\
+	p(y_n|\theta) &= p(x_n=1)p(y_n|x_n,\theta) +p(x_n=2)p(y_n|x_n,\theta)
+	p(x_n=2)p(y_n|x_n,\theta)\\
+		      &= \pi_1 \mathrm{Normal}(\mu_1,\nu_1) +
+		      \pi_2 \mathrm{Normal}(\mu_2,\nu_2)
+\end{align*}
+
+I got lost in the lecture, to see the rest of this derivation, look in the
+textbook, pg 70 (chapter 3).
+
+\subsection{Bayesian Logic: An Introduction}
+
+
+
+\end{document}
